@@ -7,8 +7,12 @@
     <title>Helloo</title>
 </head>
 <body>
-    <h1> Feliz ano novo</h1>
-     
+    <h1> App Ludy</h1>
+     <?php
+        require_once "model/Conexao.php";
+        $tecnologias = Conexao::select("tecnologia", "id, nome");
+        print_r($tecnologias);
+     ?>
     
 </body>
 </html>
